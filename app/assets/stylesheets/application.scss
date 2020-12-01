@@ -1,9 +1,7 @@
-/*
- *= require_tree .
- *= require_self
- */
-
 /* direct_uploads.css */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 .direct-upload {
   display: inline-block;
