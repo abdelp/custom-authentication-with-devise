@@ -5,6 +5,9 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+//= require jquery
+//= require bootstrap-sprockets
+
 // direct_uploads.js
 
 addEventListener("direct-upload:initialize", event => {
