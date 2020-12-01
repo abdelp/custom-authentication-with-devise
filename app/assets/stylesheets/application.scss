@@ -40,3 +40,48 @@
 input[type=file][data-direct-upload-url][disabled] {
   display: none;
 }
+
+.group-avatar-wrapper {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 5px;
+}
+
+.show-container .group-avatar-wrapper {
+  margin: 0 auto;
+}
+
+.avatar-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.avatar-wrapper {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 5px;
+}
+
+.avatar-wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  float: left;
+  margin-right: 10px;
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+}
+
+#change-img-field {
+  visibility: hidden;
+  display: none;
+}

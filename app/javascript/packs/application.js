@@ -5,10 +5,30 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-//= require jquery
+//= require jquery3
+//= require jquery_ujs
 //= require bootstrap-sprockets
 
 // direct_uploads.js
+document.addEventListener("DOMContentLoaded", function(){
+  document.getElementById('change-img-btn').addEventListener('click', function () {
+    document.getElementById('change-img-field').click();
+    return false;
+  });
+
+  window.changeImg = function changeImg(input) {
+    if (input.files && input.files[0]) {
+      let reader = new FileReader();
+  
+      reader.onload = function (e) {
+        document.getElementById('img-prev')
+          .src = e.target.result;
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+});
 
 addEventListener("direct-upload:initialize", event => {
   const { target, detail } = event
