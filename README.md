@@ -1,6 +1,6 @@
 # Customize Devise authentication with Active Storage
 
-> This repo is to have the source code of my [tutorial]() about how to customize the Devise Gem authentication using Active Storage
+> This repo is to have the source code of my [tutorial](https://hackernoon.com/how-to-customize-devise-authentication-with-active-storage-5t1b34wz) about how to customize the Devise Gem authentication using Active Storage with a few extra improvements to the UX.
 
 ## Built With
 
@@ -10,13 +10,9 @@
 - HTML5
 - CSS3
 
-## Live Demo
-
-[Live Demo Link](https://whispering-retreat-92662.herokuapp.com)
-
 ## Prerequisites
 
-- [PostreSQL](https://www.postgresql.org/download/)
+- Sign up to [Cloudinary](www.cloudinary.com)
 
 ### Setup
 
@@ -64,20 +60,6 @@ To login, it is only required to specify the username.
 #### Profile
 
 ![profile](./app/assets/images/profile.png)
-
-### Deployment
-
-To deploy on Heroku:
-
-1. You need to register an account on [Heroku](https://www.heroku.com)
-
-2. After that, inside the root folder, you need to create and migrate the project:
-
-```
-$ heroku create
-$ git push heroku master
-$ heroku run rails db:migrate
-```
 
 ## Authors
 
