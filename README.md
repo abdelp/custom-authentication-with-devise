@@ -41,7 +41,7 @@ rails s
 
 #### Register
 
-![register](./app/assets/images/register.png)
+![register](./app/assets/images/sign_up.png)
 
 To register a new user you:
 
@@ -55,7 +55,7 @@ To register a new user you:
 
 ![login](./app/assets/images/login.png)
 
-To login, it is only required to specify the username.
+To login, it is only required to specify the email and the password.
 
 #### Profile
 
