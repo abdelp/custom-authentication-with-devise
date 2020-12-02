@@ -10,11 +10,19 @@ require("channels")
 //= require bootstrap-sprockets
 
 // direct_uploads.js
-document.addEventListener("DOMContentLoaded", function(){
-  document.getElementById('change-img-btn').addEventListener('click', function () {
-    document.getElementById('change-img-field').click();
-    return false;
-  });
+window.onload = function() {
+ console.log('hola')
+};
+
+document.addEventListener("turbolinks:load", () => {
+  const changeImgBtn = document.getElementById('change-img-btn');
+
+  if (changeImgBtn) {
+    changeImgBtn.addEventListener('click', function () {
+      document.getElementById('change-img-field').click();
+      return false;
+    });
+  }
 
   window.changeImg = function changeImg(input) {
     if (input.files && input.files[0]) {
